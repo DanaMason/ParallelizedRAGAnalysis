@@ -77,7 +77,7 @@ def sha256(path):
 def download(url, dest):
     part = dest.with_name(dest.name + ".part")
     offset = part.stat().st_size if part.exists() else 0
-    headers = {}
+    headers = {"User-Agent": "data_preparation.py (CSC 718 coursework)"}
 
     if offset:
         headers["Range"] = f"bytes={offset}-"  # Resume from the last byte we have
