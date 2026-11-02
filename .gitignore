@@ -1,0 +1,7 @@
+   raw/
+   data/
+   *.hdf5
+   *.part
+   *.fbin
+   *.ibin
+   build/
